@@ -1,0 +1,91 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[cm]{fullpage}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[hidelinks]{hyperref}
+\usepackage{bm}
+
+\usepackage{t1enc}
+\usepackage[utf8]{inputenc}
+\usepackage[hungarian]{babel}
+\usepackage{lmodern}
+
+\usepackage{enumitem}
+\setitemize{itemsep=0pt}
+
+\usepackage[dvipsnames]{xcolor}
+
+\begin{document}
+
+\renewcommand{\arraystretch}{1.2}
+
+\definecolor{darkgreen}{HTML}{098905}
+
+\newcommand{\n}{\ensuremath{\textcolor{blue}{n}}}
+\renewcommand{\k}{\ensuremath{\textcolor{PineGreen}{k}}}
+\newcommand{\x}{\ensuremath{\textcolor{red}{x}}}
+\renewcommand{\u}{\ensuremath{\textcolor{darkgreen}{u}}}
+\renewcommand{\c}{\ensuremath{\textcolor{Sepia}{c}}}
+\newcommand{\q}{\ensuremath{\textcolor{SkyBlue}{q}}}
+
+\newcommand{\sumi}{\ensuremath{\sum_{\n= 0}^{\infty}}}
+
+\title{Analízis 2 informatikusoknak képletgyűjtemény II. zh-ra}
+\author{Kuklin István}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+\boldmath
+
+\section{Előszó}
+Ezt a képletgyűjteményt a deriválttáblázattal ellentétben nem lehet használni a dolgozatban. Azért állítottam össze, hogy a magolást megkönnyítse.
+
+\section{$\sinh x$ és $\cosh x$}
+\begin{minipage}{0.5\textwidth}
+\begin{equation}
+\sinh \x = \frac{e^{\x} - e^{-\x}}{2}
+\end{equation}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{equation}
+\cosh \x = \frac{e^{\x} + e^{-\x}}{2}
+\end{equation}
+\end{minipage}
+
+\section{Sorok, Taylor sor, hatványsorok}
+
+\subsection{Nevezetes Taylor sorok}
+\begin{equation}
+e^{\x} = \sumi \frac{{\x}^{\n}}{\n!}
+\end{equation}
+\begin{equation}
+\ln \x = \sumi \frac{(-1)^{\n-1}}{\n} \cdot (\x-1)^{\n}
+\end{equation}
+\begin{equation}
+\cos \x = \sumi \frac{(-1)^{\n}}{(2\n)!} \cdot \x^{2\n}
+\end{equation}
+\begin{equation}
+\sin \x = \sumi \frac{(-1)^{\n}}{(2\n+1)!} \cdot \x^{2\n+1}
+\end{equation}
+\begin{equation}
+\cosh \x = \sumi \frac{1}{(2\n)!} \cdot \x^{2\n}
+\end{equation}
+\begin{equation}
+\sinh \x = \sumi \frac{1}{(2\n+1)!} \cdot \x^{2\n+1}
+\end{equation}
+
+\subsection{Geometriai / mértani sor}
+\begin{equation}
+\sumi \c_1 \cdot \q^{\n} = \frac{\c_1}{1-\q};\ |\q| < 1
+\end{equation}
+
+\subsection{Binomiális sor}
+\begin{equation}
+  (1+\u)^{\k} = \sumi \binom{\k}{\n} \cdot {\u}^{\n}
+\end{equation}
+
+\end{document}
