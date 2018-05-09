@@ -97,7 +97,7 @@ Hatvány sorba fejtésénél használatos!
   (1+\u)^{\k} = \sumi \binom{\k}{\n} \cdot {\u}^{\n};\ |\u| < 1
 \end{equation}
 \begin{equation}
-\binom{k}{n} = \frac{n \cdot (k-1) \cdot (k-2)\cdot ... \cdot (k-n+1)}{n!}
+  \binom{k}{n} = \frac{k \cdot (k-1) \cdot (k-2)\cdot ... \cdot (k-n+1)}{n!}
 \end{equation}
 
 \section{Kétváltozós függvények analízise}
@@ -171,8 +171,8 @@ akkor fennáll, hogy
   \]
 \end{itemize}
 
-\section{Iránymenti derivált}
-\subsection{Keresés definícióval}
+\subsection{Iránymenti derivált}
+\subsubsection{Keresés definícióval}
 \begin{equation}
   \frac{\delta f(P_0)}{\delta \vec{v}} = \lim_{t \rightarrow 0} \frac{f(P_0 + t \cdot \vec{v_e}) - f(P_0)}{t}\ ,
 \end{equation}
@@ -181,7 +181,7 @@ ahol:
 \item $P_0$ a vizsgált pont
 \item $\vec{v_e}$ annak az iránynak az egységnyi hosszú vektora, amiben a meredekséget keressük
 \end{itemize}
-\subsection{Iránymenti deriválás gradiensvektorral}
+\subsubsection{Iránymenti deriválás gradiensvektorral}
 \begin{equation}
   \frac{\delta f}{\delta \vec{v}} = \overbrace{
     \begin{bmatrix}
@@ -194,8 +194,22 @@ ahol
 \begin{itemize}
 \item $\vec{v}_e$ az egységnyi hosszúra rövidített irányvektor
 \end{itemize}
-\subsection{Fontos infó maximális és minimális meredekség keresése}
+\subsubsection{Fontos infó maximális és minimális meredekség keresése}
 A gradiensvektor mindig a maximális meredekség irányába néz.
 
+\subsection{Polárkoordinátás helyettesítés}
+Néha egy feladatban a határérték $y = mx$ helyettesítéssel nem jön ki. Ilyenkor a teendő:
+\[
+  x = r \cdot \cos \varphi;\ y = r \cdot \sin \varphi\ ,
+\]
+Ezt helyettesítsük, majd
+\begin{itemize}
+\item $\varphi$ valami konstans
+\end{itemize}
+
+\begin{equation}
+\lim_{r \rightarrow \sqrt{x_0^2 + y_0^2}} \text{HELYETTESÍTÉS} = ?
+\end{equation}
+megoldandó. Általában korlátos dolgok jönnek ki.
 
 \end{document}
