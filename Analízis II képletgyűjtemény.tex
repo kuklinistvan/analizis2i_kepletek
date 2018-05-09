@@ -123,10 +123,19 @@ z = f(x_0;y_0) + f^{'}_x(x_0;y_0)(x-x_0) + f^{'}_y(x_0;y_0)(y-y_0)
 \subsubsection{Érintősík normálvektora}
 Rendezzük 0-ra a fentit és az együtthatók adják rendre.
 
+\subsection{Nem folytonos függvény parciális differenciálása adott pontban}
+
+\begin{equation}
+  f^{'}_x(x_0;y_0) = \lim_{t \rightarrow 0} \frac{f(x_0+t;y_0) - f(x_0;y_0)}{t}
+\end{equation}
+\begin{equation}
+  f^{'}_y(x_0;y_0) = \lim_{t \rightarrow 0} \frac{f(x_0;y_0+t) - f(x_0;y_0)}{t}
+\end{equation}
+
 \subsection{Totális differenciálhatóság}
 
 \subsubsection{UPDATE: egyszerűbben}
-Ha kevés pontért kér indoklást a feladat, akkor a varázsmondat így hangzik: a függvény esetén $\exists \varepsilon > 0$ úgy, hogy $K_{\varepsilon}(x;y)$-ban léteznek $f^ {'}_x(x;y)$ és $f^{'}_y(x;y)$ parciális deriváltak, és azok folytonosak. \\
+Ha kevés pontért kér indoklást a feladat, akkor a varázsmondat így hangzik: $\exists \varepsilon > 0$ úgy, hogy $K_{\varepsilon}(x;y)$-ban léteznek $f^ {'}_x(x;y)$ és $f^{'}_y(x;y)$ parciális deriváltak, és azok folytonosak. \\
 Ahol kifejezetten nem folytonos a függvény, ott ez természetesen nem igaz.\footnote{Elvileg a mondat igazságtartalma eléggé triviális, de férfiasan elismerem, hogy ötletem sincs, egyáltalán honnan szedtük ezt a megállapítást.}
 
 \subsubsection{Teljeskörűen (nem valószínű, hogy kelleni fog a zh-ban)}
